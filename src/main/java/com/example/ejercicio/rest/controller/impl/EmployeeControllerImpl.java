@@ -12,20 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.ejercicio.persistence.models.Employee;
 import com.example.ejercicio.persistence.repositories.EmployeeRepository;
 import com.example.ejercicio.rest.controller.EmployeeController;
+import com.example.ejercicio.services.EmployeeService;
 
 @RestController
 @RequestMapping("/employee")
 public class EmployeeControllerImpl implements EmployeeController{
 
 	@Autowired
-	EmployeeRepository employeeRepository;
+	EmployeeService employeeService;
 	
 	@Override
 	@RequestMapping(value = "", method = RequestMethod.POST)
 	public void insertEmployee(@RequestBody Employee employee) {
-		// TODO Auto-generated method stub
-		System.out.println(employee);
-		employeeRepository.save(employee);
+		employeeService.insertEmployee(employee);
 		
 	}
 
@@ -34,14 +33,14 @@ public class EmployeeControllerImpl implements EmployeeController{
 	public List<Employee> getEmployees() {
 		// TODO Auto-generated method stub
 		
-		return employeeRepository.findAll();
+		return employeeService.getEmployees();
 	}
 
 	@Override
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public Employee getEmployee(@PathVariable long id) {
 		// TODO Auto-generated method stub
-		return employeeRepository.findById(id).orElse(null);
+		return employeeService.getEmployee(id);
 	}
 	
 }
