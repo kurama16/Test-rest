@@ -5,8 +5,7 @@ import com.example.ejercicio.exceptions.base.ApplicationException;
 public class IncompleteDataException extends ApplicationException{
 
 	
-
-
+//knahu's TODO
 	/**
 	 * 
 	 */

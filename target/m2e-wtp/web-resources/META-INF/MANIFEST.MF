@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ejercicio
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: n.pena.frascaroli
+Implementation-Vendor-Id: com.example
+Build-Jdk: 1.8.0_192
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ejercicio
+Created-By: Maven Integration for Eclipse
+

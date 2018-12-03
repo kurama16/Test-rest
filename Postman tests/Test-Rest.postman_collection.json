@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "1df3d23d-3285-4036-87b4-91ce06cbc429",
+		"name": "Test-Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/employee/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "name",
+						"value": "nahue",
+						"type": "text"
+					},
+					{
+						"key": "lastName",
+						"value": "pena",
+						"type": "text"
+					},
+					{
+						"key": "age",
+						"value": "7",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nahu\",\n    \"lastName\": \"pena\",\n    \"age\":23\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				},
+				"description": "return a specify employee"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "name",
+						"value": "nahue",
+						"type": "text"
+					},
+					{
+						"key": "lastName",
+						"value": "pena",
+						"type": "text"
+					},
+					{
+						"key": "age",
+						"value": "7",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nahu\",\n    \"lastName\": \"pena\",\n    \"age\":23\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				},
+				"description": "returns all employees"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "name",
+						"value": "nahue",
+						"type": "text"
+					},
+					{
+						"key": "lastName",
+						"value": "pena",
+						"type": "text"
+					},
+					{
+						"key": "age",
+						"value": "7",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nahu\",\r\n    \"lastName\": \"pena\",\r\n    \"age\":23\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				},
+				"description": "add a employee"
+			},
+			"response": []
+		}
+	]
+}
